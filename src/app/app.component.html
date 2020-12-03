@@ -3,7 +3,7 @@
     <div class="col-xs-12">
       <button
         class="btn btn-primary"
-        (click)="onlyOdd = !onlyOdd">Oh, you only want {{evenOrOdd()}} numbers... don't you...</button>
+        (click)="onlyOdd = !onlyOdd; value = values[numbers[i]]; count()">Oh, you only want {{evenOrOdd()}} numbers... don't you...</button>
       <br><br>
       <ul 
         class="list-group">
@@ -60,6 +60,12 @@
         [highlightColor]="'transparent'"
           >Style me dynamically with mouseover using HostListener, HostBinding, and imported color choices!
       </p>
+      <div [ngSwitch]="value">
+        <p *ngSwitchCase="5">Value is 5</p>
+        <p *ngSwitchCase="10">Value is 10</p>
+        <p *ngSwitchCase="100">Value is 100</p>
+        <p *ngSwitchDefault>Value is Default</p>
+      </div>
     </div>
   </div>
 </div>
