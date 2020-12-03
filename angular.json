@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "my-directives-start"
+    }
+  },
+  "defaultProject": "my-directives-start",
+  "cli": {
+    "analytics": "4645c44c-a8e2-44bf-9e94-c79b12546b56"
+  }
 }
