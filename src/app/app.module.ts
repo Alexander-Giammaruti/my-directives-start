@@ -7,6 +7,7 @@ import { BetterHighlightDirective } from './better-highlight/better-highlight.di
 import { BetterBetterHighlightDirective } from './better-better-highlight/better-better-highlight.directive';
 import { BetterBetterBetterHighlightDirective } from './better-better-better-highlight/better-better-better-highlight.directive';
 import { BestHighlightDirective } from './best-highlight/best-highlight.directive';
+import { UnlessDirective } from './unless/unless.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { BestHighlightDirective } from './best-highlight/best-highlight.directiv
     BetterHighlightDirective,
     BetterBetterHighlightDirective,
     BetterBetterBetterHighlightDirective,
-    BestHighlightDirective
+    BestHighlightDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule
